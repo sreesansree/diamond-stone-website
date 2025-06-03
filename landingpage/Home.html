@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diamond Stone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!-- Top bar for desktop -->
+        <div class="top-bar top-bar-desktop">
+            <p>Company Name: Diamond Stone Trading</p>
+            <p>Working Hours: 7 AM to 6 PM</p>
+            <p>Contact: +968 920 99 729</p>
+            <p>Email: dts@diamondstonex.com</p>
+        </div>
+        <!-- Top bar for mobile -->
+        <div class="top-bar top-bar-mobile">
+            <div class="mobile-bar-content">
+                <p class="mobile-address">
+                    Address: Diamond Stone Trading and Services SPC, PO Box 1280, PC 111, Central Post Office, Muscat,
+                    Oman.
+                    Office No 615, Tower 1, Tathmeer, Muscat Hills, Oman.
+                </p>
+                <span class="arrow">&#9660;</span>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="/assets/logo.png" alt="Diamond Stone Logo" />
+                </a>
+            </div>
+            <!-- Search + Language for mobile only -->
+            <div class="navbar-controls-mobile">
+                <button title="Search" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+                <select name="language" id="language-select">
+                    <option value="en">En</option>
+                    <option value="ar">Arabic</option>
+                </select>
+            </div>
+            <!-- Hamburger -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Main Nav -->
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Marble Collection</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+                <!-- Desktop-only actions -->
+                <div class="navbar-actions-desktop">
+                    <button title="Search" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <select name="language" id="language-select">
+                        <option value="en">En</option>
+                        <option value="ar">Arabic</option>
+                    </select>
+                    <button class="contact-button">Contact</button>
+                </div>
+                <!-- Mobile-only contact button -->
+                <div class="navbar-actions-mobile">
+                    <button class="contact-button">Contact</button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!--CAROUSEL PART-->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Sculpting Stone<br />Into Timeless Confidence</h1>
+            <p>We specialize in sourcing, processing, and supplying authentic Omani marble.</p>
+            <button class="hero-button">Explore Our Collection</button>
+        </div>
+
+        <div class="catalog-card desktop-only">
+            <img class="catalog-img" src="/assets/bannersmall.png" alt="PDF icon" />
+            <div>
+                <p>Download our catalog</p>
+                <span>PDF 2.0 MB</span>
+            </div>
+        </div>
+    </section>
+    <!-- Only show on mobile -->
+    <div class="catalog-card mobile-only">
+        <img class="catalog-img" src="/assets/bannersmall.png" alt="PDF icon" />
+        <div>
+            <p>Download our catalog</p>
+            <span>PDF 2.0 MB</span>
+        </div>
+    </div>
+    <!--CAROUSEL End-->
+
+    <main class="page-content">
+        <!--Marble Collections Section-->
+        <Section class="collections-section">
+            <h2>Our exotic collections</h2>
+            <div class="collection-grid">
+                <div class="tile">
+                    <img src="/assets/marbles/tiles1.png" alt="Sahara Beige" />
+                    <p>Sahara Beige</p>
+                </div>
+                <div class="tile">
+                    <img src="/assets/marbles/tiles2.png" alt="Sahara Beige" />
+                    <p>Ibri</p>
+                </div>
+                <div class="tile">
+                    <img src="/assets/marbles/tiles3.png" alt="Sahara Beige" />
+                    <p>Narcissus</p>
+                </div>
+                <div class="tile">
+                    <img src="/assets/marbles/tiles4.png" alt="Sahara Beige" />
+                    <p>Desert Rose</p>
+                </div>
+                <div class="tile">
+                    <img src="/assets/marbles/tiles4.png" alt="Sahara Beige" />
+                    <p>Elegant Gray</p>
+                </div>
+                <div class="tile">
+                    <img src="/assets/marbles/tiles3.png" alt="Sahara Beige" />
+                    <p>Imperial Beige</p>
+                </div>
+                <div class="tile">
+                    <img src="/assets/marbles/tiles2.png" alt="Sahara Beige" />
+                    <p>Desert Oasis</p>
+                </div>
+                <div class="tile">
+                    <img src="/assets/marbles/tiles1.png" alt="Sahara Beige" />
+                    <p>Omani Black</p>
+                </div>
+            </div>
+            <div class="button-wrapper">
+                <button class="view-button">View All Marble Collections</button>
+            </div>
+        </Section>
+
+    </main>
+    <!-- Applications Section -->
+    <section class="application-section">
+        <h4 class="application-title">Applications</h4>
+        <p class="application-description">Diamond Stone marble adapts effortlessly across diverse spaces and styles.
+            From luxury
+            homes to iconic <br />landmarks, our stone blends durability with timeless beauty.
+        </p>
+        <div>
+            <div class="applications-grid">
+                <div class="application-item">
+                    <img src="/assets/application/image1.jpg" alt="Interior Applications" />
+                    <h3>Interior Applications</h3>
+                    <p>
+                        <span class="application-span-p">
+                            Living Spaces · Bathrooms · Walls · Flooring.
+                        </span>
+                    </p>
+                    <p>Bring natural sophistication indoors. Our marble enhances every room with refined finishes and
+                        warm, organic tones.</p>
+                </div>
+                <div class="application-item">
+                    <img src="/assets/application/image2.jpg" alt="Exterior Applications" />
+                    <h3>Exterior Applications</h3>
+                    <p>
+                        <span class="application-span-p">
+                            Facades · Outdoors · Elevation · Columns
+                        </span>
+                    </p>
+                    <p>Engineered for the outdoors, our marble endures the elements while elevating exteriors with
+                        lasting elegance.</p>
+                </div>
+                <div class="application-item">
+                    <img src="/assets/application/image3.jpg" alt="Exterior Applications" />
+                    <h3>Exterior Applications</h3>
+                    <p>
+                        <span class="application-span-p">
+                            Facades · Outdoors · Elevation · Columns
+                        </span>
+                    </p>
+                    <p>Make an unforgettable impression. Our marble combines aesthetic refinement with the strength to
+                        perform in high-traffic spaces</p>
+                </div>
+                <div class="application-item">
+                    <img src="/assets/application/image4.jpg" alt="Exterior Applications" />
+                    <h3>Exterior Applications</h3>
+                    <p>
+                        <span class="application-span-p">
+                            Facades · Outdoors · Elevation · Columns
+                        </span>
+                    </p>
+                    <p>Personalized and elegant, our marble brings comfort, character, and luxury to both modern and
+                        classic homes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finishes Section -->
+    <section class="finishes-section">
+        <div class="finishes-head">
+            <h4 class="finishes-title">Finishes</h4>
+            <p class="finishes-description">
+                Elevate every surface with precision finishes.<br />
+                From polished to honed, explore textures that define elegance.
+            </p>
+        </div>
+
+        <div class="finishes-grid-wrapper">
+            <div class="finishes-grid">
+                <!-- Grid items -->
+                <div class="finishes-item">
+                    <div class="image-wrapper"><img src="/assets/finishes/img1.png" alt="Interior-tiles" /></div>
+                    <p>Brushed</p>
+                </div>
+                <div class="finishes-item">
+                    <div class="image-wrapper"><img src="/assets/finishes/img2.jpg" alt="Interior-tiles" /></div>
+                    <p>Brush Hammered</p>
+                </div>
+                <div class="finishes-item">
+                    <div class="image-wrapper"><img src="/assets/finishes/img3.jpg" alt="Interior-tiles" /></div>
+                    <p>Generic</p>
+                </div>
+                <div class="finishes-item">
+                    <div class="image-wrapper"><img src="/assets/finishes/img4.jpg" alt="Interior-tiles" /></div>
+                    <p>Polished</p>
+                </div>
+                <div class="finishes-item">
+                    <div class="image-wrapper"><img src="/assets/finishes/img5.png" alt="Interior-tiles" /></div>
+                    <p>Honed</p>
+                </div>
+                <div class="finishes-item">
+                    <div class="image-wrapper"><img src="/assets/finishes/img6.jpg" alt="Interior-tiles" /></div>
+                    <p>Leathered</p>
+                </div>
+            </div>
+
+            <div class="finishes-button-wrapper">
+                <button class="view-finishes-btn">View Finishes</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section class="certifications-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Certifications</h2>
+                <p>Our dedication to excellence is backed by internationally recognized certifications.</p>
+            </div>
+            <div class="certifications-grid">
+                <!-- ISO Certification -->
+                <div class="certification-item">
+                    <div class="certification-image">
+                        <img src="/assets/certifications/imag1.png" alt="ISO Certification">
+                    </div>
+                    <p>Quality Management</p>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-image">
+                        <img src="/assets/certifications/imag2.png" alt="ISO Certification">
+                    </div>
+                    <p>Environmental Management</p>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-image">
+                        <img src="/assets/certifications/imag2.png" alt="ISO Certification">
+                    </div>
+                    <p>Occupational Health & Safety</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="gallery-head">
+            <h4 class="gallery-title">Projects Gallery </h4>
+            <p class="gallery-description">
+                Explore how Diamond Stone marble transforms spaces around the world.
+            </p>
+        </div>
+
+        <div class="gallery-grid-wrapper">
+            <div class="gallery-grid">
+                <!-- Grid items -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper"><img src="/assets/projects_gallery/img1.png"
+                            alt="Interior-tiles" />
+                    </div>
+                    <p class="gallery-image-title">Tanzania</p>
+                    <p class="gallery-image-description">Elegant private residence featuring marble flooring and grand
+                        staircase.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper"><img src="/assets/projects_gallery/img2.jpg"
+                            alt="Interior-tiles" />
+                    </div>
+                    <p class="gallery-image-title">Qasr Al Hosn</p>
+                    <p class="gallery-image-description">Elegant private residence featuring marble flooring and grand
+                        staircase.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper"><img src="/assets/projects_gallery/img3.jpg"
+                            alt="Interior-tiles" />
+                    </div>
+                    <p class="gallery-image-title">Founders Memorial</p>
+                    <p class="gallery-image-description">Elegant private residence featuring marble flooring and grand
+                        staircase.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper"><img src="/assets/projects_gallery/img4.jpg"
+                            alt="Interior-tiles" />
+                    </div>
+                    <p class="gallery-image-title">Palm Jumeirah</p>
+                    <p class="gallery-image-description">Elegant private residence featuring marble flooring and grand
+                        staircase.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper"><img src="/assets/projects_gallery/img5.jpg"
+                            alt="Interior-tiles" />
+                    </div>
+                    <p class="gallery-image-title">Swehan</p>
+                    <p class="gallery-image-description">Elegant private residence featuring marble flooring and grand
+                        staircase.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper"><img src="/assets/projects_gallery/img6.jpg"
+                            alt="Interior-tiles" />
+                    </div>
+                    <p class="gallery-image-title">D&Summit</p>
+                    <p class="gallery-image-description">
+                        Elegant private residence featuring marble flooring and grand staircase.
+                    </p>
+                </div>
+            </div>
+
+            <div class="gallery-button-wrapper">
+                <button class="view-gallery-btn">View All Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Your Project Section -->
+
+    <section class="project-section">
+        <div class="project-container">
+            <div class="project-info">
+                <h2>Start Your Project with Us</h2>
+                <p class="subtitle">Tell us about your vision, and we'll help bring it to life.</p>
+
+                <div class="contact-details">
+                    <h3>Address</h3>
+                    <p>The home service building and services app job box 1280,<br>
+                        St. T. H., Central Street 2486, Muncus, Czech<br>
+                        Office no 615, Tower 1, Whitmore, Muncus Hills, Oxen</p>
+
+                    <h3>Phone</h3>
+                    <p>+966 955 99 759</p>
+
+                    <h3>Email</h3>
+                    <p>http://historyofproperty.com</p>
+                </div>
+            </div>
+
+            <div class="project-form">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Whats App Number">
+                    <select>
+                        <option value="" disabled selected>Project Type</option>
+                    </select>
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit">Request Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials-section  -->
+    <section class="testimonials-carousel">
+        <div class="container">
+            <div class="section-header">
+                <h2>Testimonials</h2>
+                <p class="subtitle">What our clients say. What sets us apart.</p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="testimonials-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <h3>Elena Marchetti</h3>
+                            <p class="position">Interior Architect, Milan</p>
+                            <blockquote>"Working with this marble was like working with pure emotion. Every slab carried
+                                its own personality - timeless, rich, and refined. It didn't just elevate the space, it
+                                became the soul of it."</blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <h3>Elena Marchetti</h3>
+                            <p class="position">Interior Architect, Milan</p>
+                            <blockquote>"Working with this marble was like working with pure emotion. Every slab carried
+                                its own personality - timeless, rich, and refined. It didn't just elevate the space, it
+                                became the soul of it."</blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <h3>Elena Marchetti</h3>
+                            <p class="position">Interior Architect, Milan</p>
+                            <blockquote>"Working with this marble was like working with pure emotion. Every slab carried
+                                its own personality - timeless, rich, and refined. It didn't just elevate the space, it
+                                became the soul of it."</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+
+                <div class="navigation">
+                    <button class="prev-btn" aria-label="Previous testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="slide-indicators">
+                        <button class="indicator active" aria-label="Go to slide 1"></button>
+                        <button class="indicator" aria-label="Go to slide 2"></button>
+                        <button class="indicator" aria-label="Go to slide 3"></button>
+                    </div>
+                    <button class="next-btn" aria-label="Next testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs section -->
+
+    <section class="blogs-section">
+        <div class="blog-container">
+            <div class="blog-section-header">
+                <h2>Blogs</h2>
+                <p class="subtitle">Expert advice. Practical guides. Inspiring ideas.</p>
+            </div>
+
+            <div class="blogs-grid">
+                <!-- Blog 1 -->
+                <div class="blog-card">
+                    <img src="/assets/blogs/img1.png" alt="Blog image" class="blog-image">
+                    <div class="blog-meta">
+                        <div class="blog-meta-left">
+                            <span class="blog-category">Blog</span>
+                            <span class="read-time">• 10 min read</span>
+                        </div>
+                        <div class="blog-meta-right">
+                            <span class="blog-date">May 4, 2025</span>
+                        </div>
+                    </div>
+                    <h3 class="blog-title">How to Choose the Right Marble for Your Project</h3>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="blog-card">
+                    <img src="/assets/blogs/img2.png" alt="Blog image" class="blog-image">
+                    <div class="blog-meta">
+                        <div class="blog-meta-left">
+                            <span class="blog-category">Blog</span>
+                            <span class="read-time">• 10 min read</span>
+                        </div>
+                        <div class="blog-meta-right">
+                            <span class="blog-date">May 4, 2025</span>
+                        </div>
+                    </div>
+                    <h3 class="blog-title">How to Choose the Right Marble for Your Project</h3>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="blog-card">
+                    <img src="/assets/blogs/img3.png" alt="Blog image" class="blog-image">
+                    <div class="blog-meta">
+                        <div class="blog-meta-left">
+                            <span class="blog-category">Blog</span>
+                            <span class="read-time">• 10 min read</span>
+                        </div>
+                        <div class="blog-meta-right">
+                            <span class="blog-date">May 4, 2025</span>
+                        </div>
+                    </div>
+                    <h3 class="blog-title">How to Choose the Right Marble for Your Project</h3>
+                </div>
+            </div>
+            <div class="blog-button-wrapper">
+                <button class="view-blog-btn">View All Blogs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloadable Resources -->
+
+    <section class="downloads-section">
+        <div class="downloads-container">
+            <div class="downloads-section-header">
+                <h2>Downloadable Resources</h2>
+            </div>
+
+            <div class="resources-grid">
+                <!-- Resource 1 -->
+                <div class="resource-card">
+                    <div class="resource-image-container">
+                        <img src="/assets/downloadble/image1.png" alt="Marble Product Catalog" class="resource-image">
+                        <a href="#" class="download-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 15V3M12 15L8 11M12 15L16 11M21 15V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V15"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Marble Product Catalog</h3>
+                        <p class="resource-description">Browse our full marble collection with specs, finishes, and
+                            application examples.</p>
+                        <div class="resource-meta">
+                            <span class="file-type">PDF</span>
+                            <span class="file-size">2.0 MB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="resource-card">
+                    <div class="resource-image-container">
+                        <img src="/assets/downloadble/image1.png" alt="Installation Guide" class="resource-image">
+                        <a href="#" class="download-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 15V3M12 15L8 11M12 15L16 11M21 15V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V15"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Installation Guide</h3>
+                        <p class="resource-description">Browse our full marble collection with specs, finishes, and
+                            application examples.</p>
+                        <div class="resource-meta">
+                            <span class="file-type">PDF</span>
+                            <span class="file-size">2.0 MB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <div class="footer-brand">
+                        <div class="logo-container">
+                            <img src="/assets/logo.png" alt="Diamond Stone Logo" class="footer-logo">
+                        </div>
+                        <div class="social-media-container">
+                            <p class="tagline">SOCIAL MEDIA</p>
+                            <div class="footer-social">
+                                <a href="#" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16.5 7.5V7.501" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="Twitter">
+                                    <svg width="20" height="20" viewBox="0 0 1200 1227" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1175.27 0H1010.59L597.38 529.04L184.34 0H0L482.18 631.46L13.45 1227H178.45L597.38 685.89L1016.59 1227H1200L716.96 590.71L1175.27 0Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="footer-right-columns">
+                        <div class="footer-column">
+                            <h3 class="footer-title">Quick links</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Our Mantle Collection</a></li>
+                                <li><a href="#">Applications</a></li>
+                                <li><a href="#">Finishes</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Certifications</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Blogs</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h3 class="footer-title">Resources</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Mantle Product Catalog</a></li>
+                                <li><a href="#">Installation Guide</a></li>
+                            </ul>
+
+                            <h3 class="footer-title">Address</h3>
+                            <p class="footer-text">Diamond stone trading and services spc po box 1280,<br>
+                                Po 111, Central post office, Musical.<br>
+                                Ornan offers no 615, Tower 1, Tartmeter,<br>
+                                Musical Hills, Ornan</p>
+
+                            <h3 class="footer-title">Phone</h3>
+                            <p class="footer-text">+968 920 99 729</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Newsletter Section - Mobile Only -->
+                <div class="mobile-newsletter">
+                    <h3 class="newsletter-title">Subscribe to newsletter</h3>
+                    <div class="newsletter-form">
+                        <div class="input-with-button">
+                            <input type="email" placeholder="your@gmail.com" />
+                            <button class="arrow-button" aria-label="Submit Newsletter">
+                                <!-- Arrow Icon (Right Arrow) -->
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Container - Will move under columns on mobile -->
+                <div class="mobile-social">
+                    <p class="tagline">SOCIAL MEDIA</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M16.5 7.5V7.501" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 1200 1227" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1175.27 0H1010.59L597.38 529.04L184.34 0H0L482.18 631.46L13.45 1227H178.45L597.38 685.89L1016.59 1227H1200L716.96 590.71L1175.27 0Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="footer-copyright">
+                    <p>Version: Alliance © 2025 All Rights Reserved</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms of service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navContainer = document.querySelector('.nav-container');
+
+            mobileMenu.addEventListener('click', function () {
+                mobileMenu.classList.toggle('active');
+                navContainer.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a link (optional)
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.remove('active');
+                    navContainer.classList.remove('active');
+                });
+            });
+        });
+        /* ------------------------ */
+        document.addEventListener('DOMContentLoaded', function () {
+            const track = document.querySelector('.testimonials-track');
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const indicators = document.querySelectorAll('.indicator');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            const progressFill = document.querySelector('.progress-fill');
+
+            let currentIndex = 0;
+            const slideCount = slides.length;
+
+            function updateCarousel() {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+                // Update indicators
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === currentIndex);
+                });
+
+                // Update progress bar
+                progressFill.style.width = `${(currentIndex + 1) * (100 / slideCount)}%`;
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slideCount;
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+                updateCarousel();
+            }
+
+            // Button click events
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+
+            // Indicator click events
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+
+            // Auto-advance (optional)
+            setInterval(nextSlide, 5000);
+        });
+    </script>
+
+</body>
+
+</html>
